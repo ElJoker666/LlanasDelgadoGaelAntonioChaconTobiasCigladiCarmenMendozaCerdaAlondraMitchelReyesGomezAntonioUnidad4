@@ -6,6 +6,33 @@
     <title>Bienvenido</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg,  #0077b6, #caf0f8, #90e0ef, #0077b6);
+            font-family: 'Arial', sans-serif;
+        }
+        .card {
+            border-radius: 15px;
+        }
+        .btn-primary {
+            background-color: #2575fc;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #6a11cb;
+        }
+        a {
+            text-decoration: none;
+            color: #2575fc;
+        }
+        a:hover {
+            color: #6a11cb;
+        }
+        h2 {
+            color: #2575fc;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body class="bg-light d-flex justify-content-center align-items-center vh-100">
     <div class="card shadow p-4" style="width: 22rem;">
