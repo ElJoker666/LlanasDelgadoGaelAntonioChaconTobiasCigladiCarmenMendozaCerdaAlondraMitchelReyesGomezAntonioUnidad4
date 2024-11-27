@@ -1,4 +1,5 @@
 <?php
+ob_start();
 session_start();
 require 'db.php';
 
@@ -25,4 +26,6 @@ try {
 } catch (PDOException $e) {
     die("Error al validar usuario: " . $e->getMessage());
 }
+ob_end_flush();  // Finaliza el búfer de salida y envía todo el contenido
+
 ?>
