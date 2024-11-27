@@ -23,6 +23,7 @@
         </form>
         <p class="text-center mt-3">
             <a href="login.php">¿Ya tienes una cuenta? Inicia sesión</a>
+            <a href="index.php">Regresar al index</a>
         </p>
     </div>
 

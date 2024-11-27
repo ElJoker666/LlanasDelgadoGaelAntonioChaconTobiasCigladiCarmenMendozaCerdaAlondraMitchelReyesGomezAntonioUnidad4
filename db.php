@@ -1,9 +1,9 @@
 <?php
-$host = '127.0.0.1';   // IP de tu base de datos
-$db = 'login_system';  // Nombre de la base de datos
-$user = 'root';        // Usuario de la base de datos
-$password = '';        // Contraseña del usuario
-$port = '33065';       // Puerto personalizado
+$host = getenv('DB_HOST');
+$db = getenv('DB_DATABASE');
+$user = getenv('DB_USERNAME');
+$password = getenv('DB_PASSWORD');
+$port = getenv('DB_PORT');
 
 try {
     $pdo = new PDO("mysql:host=$host;port=$port;dbname=$db;charset=utf8mb4", $user, $password);

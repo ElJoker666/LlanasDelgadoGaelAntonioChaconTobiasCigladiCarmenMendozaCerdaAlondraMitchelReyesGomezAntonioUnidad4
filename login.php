@@ -22,6 +22,7 @@
             <button type="submit" class="btn btn-primary w-100">Login</button>
             <p class="text-center mt-3">
     <a href="register.php">¿No tienes una cuenta? Regístrate</a>
+    <a href="index.php">Regresar al index</a>
 </p>
 
         </form>
