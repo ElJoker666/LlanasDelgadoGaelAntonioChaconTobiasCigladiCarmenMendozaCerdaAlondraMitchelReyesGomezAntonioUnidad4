@@ -1,10 +1,11 @@
 # Usa una imagen base de PHP con Apache
 FROM php:8.2-apache
 
-# Instala las extensiones necesarias para PHP y MySQL
+# Instala las extensiones necesarias para PHP y MySQL, y también PostgreSQL
 RUN apt-get update && apt-get install -y \
     libzip-dev zip unzip \
-    && docker-php-ext-install pdo_mysql
+    libpq-dev && \  
+    docker-php-ext-install pdo_mysql pdo_pgsql  # Agrega pdo_pgsql
 
 # Copia el código de la aplicación al contenedor
 COPY . /var/www/html/
