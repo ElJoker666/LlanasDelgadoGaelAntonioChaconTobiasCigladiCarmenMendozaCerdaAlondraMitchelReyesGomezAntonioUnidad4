@@ -12,11 +12,11 @@ services:
     depends_on:
       - db
     environment:
-      - DB_HOST=db
-      - DB_PORT=3306
-      - DB_DATABASE=login_system
-      - DB_USERNAME=root
-      - DB_PASSWORD=secret  
+      - DB_HOST=dpg-ct3br7lumphs73dr1d70-a
+      - DB_PORT=5432
+      - DB_DATABASE=login_system_66lz
+      - DB_USERNAME=login_system_66lz_user
+      - DB_PASSWORD=WYW5f81ukbXhZzlPbRM836gEdtpkxHpO  
 
   db:
     image: mysql:8.0
@@ -24,8 +24,8 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: secret
-      MYSQL_DATABASE: login_system
+      MYSQL_ROOT_PASSWORD: WYW5f81ukbXhZzlPbRM836gEdtpkxHpO
+      MYSQL_DATABASE: login_system_66lz
     volumes:
       - db_data:/var/lib/mysql
 
